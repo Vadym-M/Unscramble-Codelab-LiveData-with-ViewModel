@@ -1,4 +1,7 @@
 package com.example.android.unscramble.ui.game
 
-class GameViewModel {
+import androidx.lifecycle.ViewModel
+
+class GameViewModel : ViewModel() {
+
 }
