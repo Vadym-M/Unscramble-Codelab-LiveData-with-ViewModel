@@ -25,10 +25,6 @@ class GameViewModel : ViewModel() {
     val currentScrambledWord: LiveData<String>
         get() = _currentScrambledWord
 
-    override fun onCleared() {
-        super.onCleared()
-        Log.d("GameFragment", "GameViewModel destroyed!")
-    }
 
     private fun getNextWord() {
         currentWord = allWordsList.random()
